@@ -1,34 +1,55 @@
-# Projekt Webbdesign för CMS - Järvsö Stugby
+# Projekt DT197G - Wordpress Tema
 
-## Kategorier
-I detta tema används kategorier för att skriva ut de olika posterna som görs, nedan finns en lista över vilka kategorier som bör finnas med för att temat ska fungera som tänkt. 
+### Välkommen till mitt projekt i kursen DT197G :wave:
+Detta projekt är skapat som en sista del i kursen DT197G på Mittuniversitetet. Syftet var att skapa ett eget Wordpress tema. 
+ 
+### :open_book: Projektöversikt 
+Repot innehåller endast ett Wordpress tema.
 
-| Kategorier           | Slug               |
-|----------------------|:------------------:|
-| Boende               | boende             |
-| Boende inforuta      | boend-inforuta     |
-| Nyheter              | nyheter            |
-| Sommar aktiviteter   | sommar-aktiviteter |
-| Vinter aktiviteter   | vinter-aktiviteter |
+### :rocket: Funktioner 
+* Användaren kan välja mellan två olika `page templates`. "Undersida nyheter - en kolumn" och "Aktiviteter - En kolumn". 
+* Header och logga går att anpassa till valfri bild.
+* Det finns en rad olika kategorier för att skriva ut inläggen för att temat ska fungera, se tabellen nedan. 
 
-## Pages
-Sidorna går att döpa till vadsomhelst, om START istället ska vara Startsida så kommer detta inte att påverka något. 
+| Kategorier | Slug |
+| --------- |:----------|
+| Boende    | boende |
+| Boende inforuta | boende-inforuta|
+| Nyheter | nyheter |
+| Sommar aktiviteter | sommar-aktiviteter |
+| Vinter aktiviteter | vinter-aktiviteter |
 
-### Komma igång med Startsidan och Boende sidan. 
-För att skapa startsidan behöver du gå till *"Apperance -> Customize -> Home page settings"* alternativt på *"Settings -> Reading"*. Här går det att välja vilken av sidorna som ska vara den statiska (startsidan) och vilken som ska vara posts page (boende sidan). 
 
-### Templates
-Detta tema stödjer "page templates" och det finns 2 olika mallar som går att använda och de finns listade nedan:
+### :wrench: Teknologier och Verktyg 
++ **PHP**: För att bygga upp temats alla olika undersidor.
++ **Wordpress**: Används som CMS och medför en del av funktionerna för temat. 
++ **JavaScript**: För att skapa en mobilmeny.
++ **CSS**: För styling av temat. 
 
-* "Undersida nyheter - En kolumn" - 
-Detta är en undersida som är speciellt designad för att skriva ut nyhetsinlägg med kategori 'nyheter'. Den skriver ut alla nyhetsinlägg som finns med både bild och text, inläggen skrivs i fallande ordning med senaste inlägget högst upp. 
+### :file_folder: Struktur 
++ **css**: Innehåller stilfiler för temat. 
++ **images**: Innehåller bilder för temat. 
++ **js**: Innehåller  en JavaScript fil.
++ **rot-mappen**: Innehåller alla undersidor, header, footer m.m och templates filerna.
 
-* "Aktiviteter - En kolumn" - Denna mall är till för att slå ihop alla aktiviteter till en och samma undersida, här används kategorin "aktiviteter" för att skriva ut alla de aktiviteter som finns skrivna som poster. 
+### :star: Vidareutveckling / Förbättrnignar 
++ Skapa fler möjligheter för användaren att ändra temat, tex färg osv. 
 
-## Menyn
-Menyer kan skapas genom att gå till *"Apperance -> Menus"*. I detta fall så kommer menyn att vara placerad som en 'Huvudmeny'. 
+### :gear: Installation och körning
+1. Klona ner repot: 
+    
+    `https://github.com/maha404/projekt-dt191g`
 
-## Header och logga
-Detta temat har stöd för att själv välja hur headerbilden och loggan ska se ut, detta genom att ladda upp önskad bild som ska användas. 
-* Headerbilden ändras genom att gå till *"Apperance -> Header Image -> Add New Image"*
-* Loggan ändras genom att gå till *"Apperance -> Site Identity -> Change logo"*
+2. Om du inte redan har wordpress installerat kan du göra det [här](https://wordpress.org/download/).
+
+3. XAMPP för lokal körning behöver också finnas installerat. Om du inte redan har det installerat går det att installera [här](https://www.apachefriends.org/download.html).
+
+4. Flytta Wordpress installationen till `htdocs` mappen.
+
+5. Skapa en user i `phpMyAdmin` med valfritt namn och skapa samtidigt en databas i samma namn. 
+
+6. Starta sedan Appache och MYSQL via XAMPP och gå till `http://localhost/wordpress` för att slutföra installationen av Wordpress, följ anvisningarna som ges. Här behöver du bland annat ange namnet ochg lösenord på databasen du skapade i tidigare steg!
+
+7. Repot som klonades i steg 1 läggs sedan Wordpress mappen i `htdocs` under `themes`.
+
+8. Gå sedan till `themes` inne i Wordpress och ändra till temat som klonades i steg 1. 
